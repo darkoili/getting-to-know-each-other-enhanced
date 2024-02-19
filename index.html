@@ -58,13 +58,20 @@
     <br>
     <h2>Fun Fact</h2>
      <p>  A fun fact about me is that I have a twin sister</p>
-<h3 id="demo" onclick="myFunction()">Click me to change my color.</h3>
-
 <script>
-function myFunction() {
-  document.getElementById("demo").style.color = "red";
+    function show_image(src, width, height, alt) {
+    var img = document.createElement("img");
+    img.src = src;
+    img.width = width;
+    img.height = height;
+    img.alt = alt;
 }
 </script>
+    <button onclick=
+    "show_image('darko-ilic-png', 
+                 276, 
+                 110, 
+                 'Google Logo');">View image of Darko's twin sister</button> 
     <br>
     <p>Last Updated 02/11/2024</p>
     <br>

@@ -89,8 +89,9 @@
      <p>  A fun fact about me is that I have a twin sister</p>
     <br> 
     <button id="show-image-button"; style="position: absolute; left: 50%; transform: translateX(-50%)"; class="button button:hover" onclick=>View image of Darko's twin sister</button>
-    <img id="my-image" style="width:188px;height:256px;" class="center" src="irena-ilic-small.png"; hidden>
-      const showImageButton = document.getElementById("show-image-button");
+    <img id="my-image"; hidden>
+    <script>
+      const  showImageButton = document.getElementById("show-image-button");
       const myImage = document.getElementById("my-image");
       showImageButton.addEventListener("click", () => {
          myImage.hidden = !myImage.hidden;

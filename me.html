@@ -51,37 +51,36 @@
 }
 
 .image {
-  opacity: 1;
   display: block;
   width: 100%;
   height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
 }
 
-.middle {
-  transition: .5s ease;
-  opacity: 0;
+.overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
 }
 
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
+.container:hover .overlay {
   opacity: 1;
 }
 
 .text {
-  background-color: #4CAF50;
   color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
         </style>
         <title>Page Title</title>
@@ -90,9 +89,9 @@
 
     <h1 style="border:2px solid #663300 ;">Darko Ilic</h1>  
     <div class="container">
-  <img src="darko-ilic-png.png" alt="Darko Ilic" class="image" style="width:188px;height:256px;border-radius: 25px;" class="center">">
-  <div class="middle">
-    <div class="text">John Doe</div>
+  <img src="darko-ilic-png.png" alt="Darko Ilic" class="image">
+  <div class="overlay">
+    <div class="text">Darko Ilic</div>
   </div>
 
     <br>

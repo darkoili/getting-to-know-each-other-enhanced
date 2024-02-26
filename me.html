@@ -51,6 +51,17 @@
         <title>Page Title</title>
     </head>
 <body>
+    <script>
+function changeColor(id)
+{
+  document.getElementById(id).style.color = "White"; 
+  document.getElementById(id).style.backgroundColor = "White";
+}
+</script>
+
+<div id="myid">Hello There !!</div>
+
+<a href="#" onclick="changeColor('myid'); return false;">Darko Ilic</a>
     <h3 id="text" onclick="colorchange()">Darko Ilic</h3> <img src="darko-ilic-png.png" alt="Darko Ilic" style="width:188px;height:256px;border-radius: 25px;" class="center">
 <script>
 function colorchange() {
